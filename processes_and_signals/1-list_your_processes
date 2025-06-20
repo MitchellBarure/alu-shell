@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# A for-loops that displays "Best School" 10 times
-for (( i=0; i<10; i++ )) 
-do
-  echo "Best School"
-done
+# Display the list of currently running processes in a user-oriented format with hierarchy
+#Must show all processes for all users including those which might not have a TTY
+
+ps -a -x -u -f
